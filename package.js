@@ -30,6 +30,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('jpatzer:onfleet');
+  api.use('jeffpatzer:onfleet');
   api.addFiles(['tests/server.js'], 'server');
 });
