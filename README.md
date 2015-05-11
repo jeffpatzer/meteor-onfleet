@@ -25,7 +25,7 @@ Make sure that you get your API keys from OnFleet. You can do this via Settings 
 ```javascript
 Meteor.startup(function(){
   // Put you api key below, this one is an example
-  var OnFleet = OnFleetAPI.Config("1b9fedc97360a02d390fab837eb3c70a")
+  var OnFleet = OnFleetAPI.Config({key: "1b9fedc97360a02d390fab837eb3c70a"})
 })
 ```
 You should mostly likely be using `Meteor.settings.onfleet.secret` or `process.env.ONFLEET` to inject your api key. You don't want to have the secret right in your code.

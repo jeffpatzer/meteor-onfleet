@@ -9,6 +9,9 @@ OnFleetAPI.Config = function(options){
   if (!options) {
     throw new Error("OnFleetAPI options argument is required");
   }
+  if (!options.key) {
+    throw new Error("OnFleetAPI key in opotions argument is required");
+  }
 
   var API_URL = "https://onfleet.com/api/v2/";
   OnFleetAPI.API_URL = API_URL;
