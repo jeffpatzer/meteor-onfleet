@@ -64,5 +64,27 @@ OnFleet.Recipient.find("name", "Saul Goodman")
 
 * More tests
 
+## API
+
+```
+var OnFleet = OnFleetAPI.Config({key: "1b9fedc97360a02d390fab837eb3c70a"})
+```
+Assuming your variable is OnFleet, then your calls are 
+
+```
+OnFleet.Administrators.create
+OnFleet.Administrators.list
+OnFleet.Administrators.update
+OnFleet.Administrators.delete
+OnFleet.Destinations.create
+OnFleet.Destinations.getSingleDest
+OnFleet.Organizations.getDetails
+OnFleet.Organizations.getDelegatee
+OnFleet.Recipients
+OnFleet.Tasks
+OnFleet.Teams
+OnFleet.Workers
+```
+
 
 
